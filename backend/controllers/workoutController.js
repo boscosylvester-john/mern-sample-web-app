@@ -23,9 +23,13 @@ const deleteWorkout = async (req, res) => {
 }
 
 const updateWorkout = async (req, res) => {
-	
+
 }
 
 module.exports = {
-	createWorkout
+	getAllWorkouts,
+	getSingleWorkout,
+	createWorkout,
+	deleteWorkout,
+	updateWorkout
 }
