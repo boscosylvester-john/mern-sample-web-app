@@ -7,8 +7,11 @@ const workoutsRouter = require("./routes/workouts")
 const app = express()
 
 // middleware
+app.use(express.json()) // to access req.body
+
 app.use((req, res, next) => {
 	console.log(req.path, req.method)
+	next()
 })
 
 // routes
