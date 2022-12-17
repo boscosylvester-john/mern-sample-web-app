@@ -1,9 +1,9 @@
 const express = require("express")
 
-const router = express.Router
+const router = express.Router()
 
-router.length("/", () => {
-
+router.get("/", (req, res) => {
+	res.json({"msg": "Get all workouts now!"})
 })
 
 module.exports = router
